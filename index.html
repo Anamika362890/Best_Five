@@ -16,20 +16,30 @@
 <body class="bg-gray-900">
     <!-- Header Part -->
     <header class="bg-black p-24">
-        <h1 class=" text-red-500 text-center text-6xl font-bold italic ">Select Your Own Team
-            With Five</h1>
-        <p class=" text-white text-2xl w-8/12 text-center mx-auto pt-9">This is a random page for selecting football
-            players. Here you
-            can choose your
-            favorite player and can create
-            a team as you want. Come & let's make an opportunity to create your team.</p>
 
+        <div class="lg:flex ">
+            <div>
+                <img class="w-100  " src="unnamed.png">
+            </div>
+            <div class="pt-9">
+                <h1 class=" text-red-500 text-center text-6xl font-bold italic ">Select Your Own Team
+                    With Five</h1>
+                <p class=" text-white text-2xl w-8/12 text-center mx-auto pt-9">This is a random page for selecting
+                    football
+                    players. Here you
+                    can choose your
+                    favorite player and can create
+                    a team as you want. Come & let's make an opportunity to create your team.</p>
+
+            </div>
+
+        </div>
     </header>
     <main>
         <div class="bg-gray-900">
-            <div class="mx-32 py-32  flex ">
+            <div class="mx-32 py-32   gap-7 lg:flex ">
                 <!-- players part Start -->
-                <div class=" player grid grid-cols-3 gap-10 ">
+                <div class=" player grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:gap-10  ">
 
                     <div class="flex justify-center">
                         <div class=" bg-black text-white border-4 border-gray-300">
@@ -314,7 +324,7 @@
 
                             <button id="btn-calculate" type="button"
                                 class=" text-white bg-blue-800  text-2xl my-6 px-14 py-2 mx-10">Calculate</button>
-                            <h1 class="text-xl "> Player Expenses <span class="mx-5"> $<span
+                            <h1 class="text-xl "> Player Expenses <span class="ml-14"> $<span
                                         id="player-expenses">0000</span></span></h1>
 
                             <div class="my-4">
