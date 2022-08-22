@@ -37,7 +37,7 @@
     </header>
     <main>
         <div class="bg-gray-900">
-            <div class="mx-32 py-32   gap-7 lg:flex ">
+            <div class="lg:mx-32 lg:py-32   gap-7 lg:flex ">
                 <!-- players part Start -->
                 <div class=" player grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:gap-10  ">
 
@@ -54,8 +54,8 @@
                                         class="text-xl">120
                                         Assist</span>
                                 </div>
-                                <button type="button"
-                                    class=" btn text-white bg-blue-800 px-20 py-2 text-2xl mt-6">SELECT</button>
+                                <button type="button" class=" btn text-white bg-blue-800 px-20 py-2 text-2xl mt-6 "
+                                    onclick="addPlayer(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -73,8 +73,8 @@
                                         class="text-xl">120
                                         Assist</span>
                                 </div>
-                                <button type="button"
-                                    class="  btn text-white bg-blue-800 px-20 py-2 text-2xl mt-6">SELECT</button>
+                                <button type="button" class=" btn text-white bg-blue-800 px-20 py-2 text-2xl mt-6"
+                                    onclick="addPlayer(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -300,15 +300,29 @@
                 <!-- players part End-->
 
                 <!-- Right Side part Start -->
-                <div class="   ml-7">
+                <div class="  mt-7 lg:mt-0  lg:ml-7">
 
 
 
-                    <div class="bg-black py-5 mb-5">
-                        <h1 class="text-center text-white text-3xl   font-medium mt-4 ">Select
-                            Five
+                    <div class="bg-black py-5 mb-5 ">
+                        <h1 class="text-center text-white text-3xl   font-medium mt-4 ">Select-Five
                         </h1>
-                        <h1 class="text-red-500 text-3xl text-center ">..........................</h1>
+                        <h1 class="text-red-500 text-2xl text-center ">..........................</h1>
+
+
+                        <table id="" class="table-fixed text-white text-3xl m-7">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-players">
+                                <tr>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
 
                     </div>
 
@@ -319,27 +333,37 @@
                         <h1 class="text-red-500 text-3xl text-center ">..........................</h1>
 
                         <div class="text-slate-300  m-5">
-                            <span class="text-xl mx-2">Per Player</span>
-                            <input id="per-player" class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
+                            <div class="flex justify-center">
+                                <h1 class="text-xl mx-2">Per Player</h1>
+                                <input id="per-player" class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
 
+
+                            </div>
                             <button id="btn-calculate" type="button"
-                                class=" text-white bg-blue-800  text-2xl my-6 px-14 py-2 mx-10">Calculate</button>
-                            <h1 class="text-xl "> Player Expenses <span class="ml-14"> $<span
-                                        id="player-expenses">0000</span></span></h1>
+                                class=" text-white bg-blue-800  text-2xl my-6 px-14 py-2 mx-10 ">Calculate</button>
+                            <div class="flex justify-center">
+                                <h1 class="text-2xl">Player Expenses</h1>
+                                <h1 class="text-2xl ml-10">$<span id="player-expenses">00000</span></h1>
 
-                            <div class="my-4">
-                                <span class="text-xl mr-7">Manager</span>
+                            </div>
+
+                            <div class="my-4 flex justify-center">
+                                <h1 class="text-xl mr-7">Manager</h1>
                                 <input id="manager-field"
                                     class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
                             </div>
 
-                            <span class="text-xl mr-12">Coach</span>
-                            <input id="coach-field" class="border-2 border-white bg-black p-2 w-1/2 ml-2 "></input>
+                            <div class="mt-4 flex justify-center">
+                                <h1 class="text-xl mr-12">Coach</h1>
+                                <input id="coach-field" class="border-2 border-white bg-black p-2 w-1/2 ml-2 "></input>
+                            </div>
+
                             <button id="calculate-total" type="button"
-                                class=" text-white bg-blue-800  text-2xl  px-8 py-3 m-8">Calculate
+                                class=" text-white bg-blue-800  text-2xl  px-8 py-2 m-8  ">Calculate
                                 Total</button>
 
-                            <div class="flex ">
+
+                            <div class="flex justify-center ">
                                 <h1 class="text-2xl">Total</h1>
                                 <h1 class="text-2xl text-red-500 ml-32">$<span id="total">00000</span></h1>
                             </div>
@@ -371,6 +395,7 @@
     <!-- JS -->
     <script src="JS/library.js"></script>
     <script src="JS/buget.js"></script>
+    <script src="JS/addplayer.js"></script>
 </body>
 
 </html>
