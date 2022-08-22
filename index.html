@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-gray-900">
+    <!-- Header Part -->
     <header class="bg-black p-24">
         <h1 class=" text-red-500 text-center text-6xl font-bold italic ">Select Your Own Team
             With Five</h1>
@@ -27,6 +28,7 @@
     <main>
         <div class="bg-gray-900">
             <div class="mx-32 py-32  flex ">
+                <!-- players part Start -->
                 <div class=" player grid grid-cols-3 gap-10 ">
 
                     <div class="flex justify-center">
@@ -43,7 +45,7 @@
                                         Assist</span>
                                 </div>
                                 <button type="button"
-                                    class=" text-white bg-blue-800 px-20 py-2 text-2xl mt-6">SELECT</button>
+                                    class=" btn text-white bg-blue-800 px-20 py-2 text-2xl mt-6">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -62,7 +64,7 @@
                                         Assist</span>
                                 </div>
                                 <button type="button"
-                                    class=" text-white bg-blue-800 px-20 py-2 text-2xl mt-6">SELECT</button>
+                                    class="  btn text-white bg-blue-800 px-20 py-2 text-2xl mt-6">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -271,7 +273,7 @@
 
                             <div class="p-6">
                                 <h5 class=" text-2xl  text-center font-bold ">
-                                    Trent Alexander-Arnold
+                                    Trent Alexander
                                 </h5>
                                 <div class="text-slate-300 ">
                                     <span class="text-xl mx-1">36 Goals</span><span
@@ -286,8 +288,9 @@
                     </div>
 
                 </div>
+                <!-- players part End-->
 
-                <!-- Right part -->
+                <!-- Right Side part Start -->
                 <div class="   ml-7">
 
 
@@ -308,25 +311,28 @@
 
                         <div class="text-slate-300  m-5">
                             <span class="text-xl mx-2">Per Player</span>
-                            <input class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
+                            <input id="per-player" class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
 
-                            <button type="button"
+                            <button id="btn-calculate" type="button"
                                 class=" text-white bg-blue-800  text-2xl my-6 px-14 py-2 mx-10">Calculate</button>
-                            <h1 class="text-xl "> Player Expenses <span class="mx-5"> $<span>0000</span></span></h1>
+                            <h1 class="text-xl "> Player Expenses <span class="mx-5"> $<span
+                                        id="player-expenses">0000</span></span></h1>
 
                             <div class="my-4">
                                 <span class="text-xl mr-7">Manager</span>
-                                <input class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
+                                <input id="manager-field"
+                                    class="border-2 border-white bg-black p-2 w-1/2 mx-1 "></input>
                             </div>
 
                             <span class="text-xl mr-12">Coach</span>
-                            <input class="border-2 border-white bg-black p-2 w-1/2 ml-2 "></input>
-                            <button type="button" class=" text-white bg-blue-800  text-2xl  px-8 py-3 m-8">Calculate
+                            <input id="coach-field" class="border-2 border-white bg-black p-2 w-1/2 ml-2 "></input>
+                            <button id="calculate-total" type="button"
+                                class=" text-white bg-blue-800  text-2xl  px-8 py-3 m-8">Calculate
                                 Total</button>
 
                             <div class="flex ">
                                 <h1 class="text-2xl">Total</h1>
-                                <h1 class="text-2xl text-red-500 ml-32">$<span>00000</span></h1>
+                                <h1 class="text-2xl text-red-500 ml-32">$<span id="total">00000</span></h1>
                             </div>
 
                         </div>
@@ -339,20 +345,23 @@
 
 
                 </div>
-
+                <!-- Right Side part End -->
             </div>
 
         </div>
 
     </main>
     <footer>
+
         <hr class="text-white mt-9">
+        <!-- footer Part Start -->
 
         <p class="text-white text-2xl text-center py-20">Copyright @ 2022 All Rights Reserved</p>
-
+        <!-- footer Part Start -->
     </footer>
-
-
+    <!-- JS -->
+    <script src="JS/library.js"></script>
+    <script src="JS/buget.js"></script>
 </body>
 
 </html>
