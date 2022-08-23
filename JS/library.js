@@ -3,13 +3,18 @@ function getInputElementById(inputId) {
     const inputFieldValueString = inputField.value;
 
     const inputFieldValue = parseFloat(inputFieldValueString);
-    if (inputFieldValue < 0) {
-        alert("This Value can not be negative");
 
+    if (inputFieldValue < 0 || isNaN(inputFieldValue)) {
+        inputField.value = '';
+        alert("Please Provide A Valid Number")
         return;
     }
 
-    return inputFieldValue;
+    else {
+
+        return inputFieldValue;
+    }
+
 }
 
 function getElement(elementId) {
@@ -23,7 +28,7 @@ function setVlue(elementId, newValue) {
 
     if (isNaN(newValue)) {
 
-        alert('Please provide a valid number');
+
 
 
         return;

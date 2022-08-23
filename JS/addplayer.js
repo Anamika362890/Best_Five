@@ -1,6 +1,7 @@
 const cart = [];
 function displayPlayer(cartPlayer) {
 
+
     if (cartPlayer.length > 5) {
         alert("You can not add more than 5 players");
         return;
@@ -8,7 +9,9 @@ function displayPlayer(cartPlayer) {
 
     }
 
+
     const tableBody = document.getElementById('cart-players');
+
     tableBody.innerHTML = '';
     for (i = 0; i < cartPlayer.length; i++) {
 
@@ -17,7 +20,7 @@ function displayPlayer(cartPlayer) {
 
         const tr = document.createElement('tr');
         const playerNumber = i + 1;
-        //Player Expeses
+        //Player Expeses start
         document.getElementById('btn-calculate').addEventListener('click', function () {
             const perPlayerAmount = getInputElementById('per-player');
 
@@ -43,9 +46,16 @@ function displayPlayer(cartPlayer) {
 
 
 function addPlayer(element) {
+
+
     element.disabled = true;
     element.style.backgroundColor = 'lightgray';
     element.style.color = 'snow';
+
+
+
+
+
 
 
     const playerName = element.parentNode.children[0].innerText;
