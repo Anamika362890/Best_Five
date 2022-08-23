@@ -43,6 +43,9 @@ function displayPlayer(cartPlayer) {
 
 
 function addPlayer(element) {
+    element.disabled = true;
+    element.style.backgroundColor = 'lightgray';
+    element.style.color = 'snow';
 
 
     const playerName = element.parentNode.children[0].innerText;
